@@ -1,0 +1,17 @@
+{{- partial "analytics" . -}}
+{{- if .Site.Params.Analytics.Yandexmetrica.Enabled -}}
+{{ partial "metrica.html" . }}
+{{- end -}}
+<meta charset="utf-8">
+<i class="dark hidden"></i>
+<title>{{site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href='{{ "favicon-32x32.png" | relURL }}'>
+{{ $styles := resources.Get "css/style.css" | postCSS }}
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ else }}
+{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ end }}
+<link href='{{ "/css/style.min.css" | relURL }}' rel="stylesheet" type="text/css">
