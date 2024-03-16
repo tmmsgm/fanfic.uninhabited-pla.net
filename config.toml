@@ -11,14 +11,14 @@ enableRobotsTXT = true
 #hasCJKLanguage = true
 
 # If you're using Google Analytics, you can enable this feature.
-#googleAnalytics = "G-1234567890"
+#googleAnalytics = "G-XX71LV1LDK"
 
 # Disqus Comment System
 #disqusShortname = ""
 
 [params]
 # The number of articles to be displayed on a single page.
-paginator_pages = "6"
+paginator_pages = "9"
 
 # Site logo.
 #logo = ""
