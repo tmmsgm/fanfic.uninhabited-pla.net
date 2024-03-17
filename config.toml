@@ -18,7 +18,7 @@ enableRobotsTXT = true
 
 [params]
 # The number of articles to be displayed on a single page.
-paginator_pages = "9"
+paginator_pages = "10"
 
 # Site logo.
 #logo = ""
@@ -38,16 +38,22 @@ paginator_pages = "9"
 [menu]
 
   [[menu.main]]
+    identifier = "pixiv"
+    name = "pixiv"
+    url = "https://www.pixiv.net/users/730416"
+    weight = 1
+
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 1
+    weight = 2
 
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 2
+    weight = 3
 
 # If you're using Yandex.Metrica, you can enable this feature.
 #[params.analytics.yandexmetrica]
