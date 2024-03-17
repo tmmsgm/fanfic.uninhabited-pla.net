@@ -40,7 +40,7 @@ paginator_pages = "10"
   [[menu.main]]
     identifier = "pixiv"
     name = "pixiv"
-    url = "https://www.pixiv.net/users/730416"
+    url = "https://www.pixiv.net/novel/series/7436506"
     weight = 1
 
   [[menu.main]]
